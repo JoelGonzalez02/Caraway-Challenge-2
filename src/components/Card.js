@@ -71,6 +71,7 @@ const CartButton = styled.button(() => ({
   backgroundColor: "white",
   marginBottom: "10px",
   transition: "0.2s ease-in",
+  cursor: "pointer",
   ":hover": {
     backgroundColor: "black",
     color: "white",
@@ -86,6 +87,7 @@ const SubButton = styled.button(({ bgColor }) => ({
   marginBottom: "20px",
   border: "none",
   fontWeight: 600,
+  // cursor: "pointer",
 }));
 
 function Card({
