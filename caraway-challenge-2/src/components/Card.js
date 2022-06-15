@@ -24,9 +24,9 @@ const StyledCard = styled.div(() => ({
   },
 }));
 
-const ImageContainer = styled.div`
-  width: 100%;
-`;
+const ImageContainer = styled.div(() => ({
+  width: "100%",
+}));
 
 const BackgroundImage = styled.img(() => ({
   width: "100%",
@@ -70,6 +70,7 @@ const CartButton = styled.button(() => ({
   borderRadius: "30px",
   backgroundColor: "white",
   marginBottom: "10px",
+  transition: "0.2s ease-in",
   ":hover": {
     backgroundColor: "black",
     color: "white",

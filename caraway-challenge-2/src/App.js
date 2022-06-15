@@ -8,16 +8,17 @@ import Foam from "./assets/foam-product.png";
 import FluffyBG from "./assets/fluffy-bg.jpg";
 import Fluffy from "./assets/fluffy-product.png";
 
-const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  background-color: #f1f0ef;
-`;
+const Container = styled.div(() => ({
+  width: "100vw",
+  height: "100vh",
+  display: "flex",
+  justifyContent: "center",
+  backgroundColor: "#f1f0ef",
+}));
 
 const products = [
   {
+    id: "1",
     title: "Shower Foam",
     subTitle: "Motivation and focus*",
     info: "Warm Sugar, Vanilla, Fresh Pancakes",
@@ -28,6 +29,7 @@ const products = [
     bgColor: "#eeea8f",
   },
   {
+    id: "2",
     title: "Sea Foam",
     subTitle: "Connection and joy*",
     info: "Sea Salt, Beach Water, Fresh Coconut, Sprinkles",
@@ -38,6 +40,7 @@ const products = [
     bgColor: "#b0eaeb",
   },
   {
+    id: "3",
     title: "Fluffy Foam",
     subTitle: "Deep, restorative sleep*",
     info: "Fresh Berries, Rainbow Sprinkles, Fairy Floss",
@@ -54,6 +57,7 @@ function App() {
     <Container>
       {products.map((product) => (
         <Card
+          key={product.id}
           title={product.title}
           subTitle={product.subTitle}
           info={product.info}
