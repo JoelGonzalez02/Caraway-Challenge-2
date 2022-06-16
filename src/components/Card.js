@@ -3,10 +3,11 @@ import styled from "@emotion/styled";
 
 const Container = styled.div(() => ({
   display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(12rem, 16rem))",
-  gap: "10px",
+  gridTemplateColumns: "repeat(minmax(12rem, 16rem))",
+  gridGap: "10px",
   justifyContent: "center",
-  margin: "40px",
+  alignItems: "center",
+  margin: "20px",
 }));
 
 const StyledCard = styled.div(() => ({
